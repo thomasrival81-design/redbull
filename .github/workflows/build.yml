@@ -9,6 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: VRACTALS V7.5
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,4 +37,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RedBullV2-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: VRACTALS V7.5/build/app/outputs/flutter-apk/app-release.apk
